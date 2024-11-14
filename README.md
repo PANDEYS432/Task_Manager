@@ -30,5 +30,43 @@ A simple and intuitive task management application built with React.js. This app
   
 ![Screenshot (1241)](https://github.com/user-attachments/assets/b2891f2a-aad9-4af0-8177-26afa34bab9d)
 
+## Getting Started
+
+To get started with the Task Management project, follow these steps:
+
+### Prerequisites
+
+Make sure Node.js and npm are installed. Download Node.js from [here](https://nodejs.org/).
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/PANDEYS432/Task_Manager.git
+```
+### 2. Go to the project directory
+```bash
+cd Task_Manager/task-manager
+```
+### 3. Install dependencies
+```bash
+npm install
+```
+### 4. Run the Development Server
+```bash
+npm start
+```
+### 5. Build for Production
+```bash
+npm run build
+```
+## Deployment
+The Project is deployed on Netlify. The live project is accessible at [here](https://marstasker.netlify.app/).
+
+## Contributing
+We welcome contributions to improve and expand the features of this web app. If you have any ideas or want to report issues, feel free to create a pull request or submit an issue in the repository.
+
+
+
+
+
 
   
