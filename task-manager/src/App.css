@@ -1,0 +1,145 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+
+.App {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #007bff; 
+  font-size: 2rem;
+}
+
+
+.filter-controls {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.filter-controls input,
+.filter-controls select {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+.task-categories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.task-category {
+  flex: 1;
+  margin: 0 15px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-category h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+.task-list .task-item .button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list .task-item .edit-btn,
+.task-list .task-item .delete-btn,
+.task-list .task-item .complete-btn {
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.task-table th,
+.task-table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.task-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.task-table td {
+  background-color: #f9f9f9;
+}
+
+
+@media (max-width: 768px) {
+  .task-categories {
+    flex-direction: column;
+  }
+
+  .task-category {
+    margin-bottom: 20px;
+  }
+
+  .filter-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .task-table {
+    display: none;
+  }
+
+  .task-category ul li {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .task-category ul li:hover {
+    background-color: #e0f7ff;
+  }
+}
+
+
+.task-list .task-item:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

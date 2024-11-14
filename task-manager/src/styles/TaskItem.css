@@ -1,0 +1,113 @@
+
+.task-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    text-align: left;
+  }
+  
+ 
+  .task-item:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.02);
+  }
+  
+ 
+  .task-item.completed {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border-left: 5px solid #0f5132;
+  }
+  
+  .task-item.completed h3 {
+    text-decoration: line-through;
+    color: #0f5132;
+  }
+  
+  .task-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+  
+  .task-item h3 span {
+    font-size: 1rem;
+    color: #888;
+    font-weight: normal;
+    margin-left: 10px;
+  }
+  
+ 
+  .task-item .task-description {
+    color: #555;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+
+  .task-item .task-due-date {
+    color: #777;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+ 
+  .task-item-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+
+  .task-item-buttons button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    min-width: 90px; 
+  }
+  
+  .task-item-buttons button:hover {
+    transform: translateY(-2px);
+  }
+  
+
+ 
+  
+  @media (max-width: 600px) {
+    .task-item {
+      padding: 15px;
+    }
+  
+   
+    .task-item h3, .task-item .task-description, .task-item .task-due-date {
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+  
+   
+    .task-item-buttons {
+      flex-direction: column;
+      gap: 10px; 
+    }
+  
+    .task-item-buttons button {
+      width: 100%;
+    }
+  }
+  
